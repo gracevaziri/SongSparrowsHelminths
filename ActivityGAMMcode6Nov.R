@@ -14,10 +14,9 @@ library(MuMIn)
 
 ##read in the data
 #raw data
-a<-read.csv("/Users/gracevaziri/OneDrive/Grace Thesis/Analyses/GAMMs/WA Temp/All birds_best antenna_with temp.csv")
+a<-read.csv("raw_telemetry_data.csv")
 mapping_file=read_tsv("16S_mapping_20180518.txt")                                                          #has condition data
-field_data = read_excel("~/OneDrive/Box Sync/WA field season/Data entry/Daily data entry_ALL_DATA.xlsx",   #load field data
-                        sheet = "recap")
+field_data = read.csv("field_data.csv")
 
 ##create a column with the date and time that the receiver started collecting data called "data_date_time
 ##create another column with the date and time that the transmitter was actually placed on the bird called "on_date_time"
@@ -538,7 +537,6 @@ length(act_ses)
 
 
 #take row names (lps Y or N) from tch_avs and repeat the same number of times as there are columns in tch_avs
-dim(tch_avs)
 trt<-rep(dimnames(act_mean)[[1]],93)
 length(trt)
 

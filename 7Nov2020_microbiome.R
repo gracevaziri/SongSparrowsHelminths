@@ -23,7 +23,7 @@ veganotu = function(physeq) {
 bird_phy = import_biom('16S_dada2.cluster.lulu.biom', '16S_dada2.cluster.lulu.tree.phy')
 
 ##import metadata
-meta.df = import_qiime_sample_data('16S_mapping_20190210.txt')
+meta.df = import_qiime_sample_data('bird_metadata_microbiota.txt')
 ##merge datasets
 bird_phy2 = merge_phyloseq(bird_phy, meta.df)
 
