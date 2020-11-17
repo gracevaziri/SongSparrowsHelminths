@@ -15,7 +15,7 @@ library(MuMIn)
 ##read in the data
 #raw data
 a<-read.csv("raw_telemetry_data.csv")
-mapping_file=read_tsv("16S_mapping_20180518.txt")                                                          #has condition data
+mapping_file=read_tsv("bird_metadata_gamms.txt")                                                          #has condition data
 field_data = read.csv("field_data.csv")
 
 ##create a column with the date and time that the receiver started collecting data called "data_date_time
