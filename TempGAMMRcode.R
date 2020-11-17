@@ -12,7 +12,7 @@ library(MuMIn)
 
 ##read in the data
 #raw data
-a<-read.csv("/Users/gracevaziri/OneDrive/Grace Thesis/Analyses/GAMMs/WA Temp/All birds_best antenna_with temp.csv")
+a<-read.csv("raw_telemetry_data.csv")
 #bring in the information on bird condition
 mapping_file=read_tsv("16S_mapping_20180518.txt")  
 
