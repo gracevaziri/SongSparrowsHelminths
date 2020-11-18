@@ -6,7 +6,7 @@
 
 
 File name | Used in code
----------   ------------
+--------- | ------------
 16S_dada2.cluster.lulu.biom | microbiota_and_parasite_egg_analysis_code.R
 16S_dada2.cluster.lulu.tree.phy | microbiota_and_parasite_egg_analysis_code.R
 bird_metadata_microbiota.txt | microbiota_and_parasite_egg_analysis_code.R
